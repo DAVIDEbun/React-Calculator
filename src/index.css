@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(to bottom, #cc8f0c 50%, #090c31 50%);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.calculator {
+  max-width: 400px;
+  background-color: #15173c;
+  padding: 30px;
+  position: absolute;
+  border-radius: 8px;
+  box-shadow: 0 20px 50px rgba(0, 5, 24, 0.4);
+}
+.display {
+  max-width: 100%;
+}
+.display textarea {
+  max-width: 100%;
+  padding: 10px;
+  text-align: right;
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.buttons {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 30px;
+}
+.buttons button {
+  flex-basis: 21%;
+  font-size: 20px;
+  padding: 20px;
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px #000d2e;
+  margin: 5px;
+}
+
+.buttons button:hover {
+  background-color: #000d2e;
+}
+
+.buttons button:active {
+  background-color: #000d2e;
+  box-shadow: 0 0 0 #000d2e;
+  transform: translateY(4px);
+}
+
+.buttons button:nth-child(4) {
+  background-color: #f7b500;
+  color: #000d2e;
+}
+
+.buttons button:nth-child(17) {
+  background-color: #f7b500;
+  color: #000d2e;
+  padding: 20px 75px;
+}
+
+.buttons button:nth-child(18) {
+  background-color: #f7b500;
+  color: #000d2e;
+  padding: 20px 65px;
+}
